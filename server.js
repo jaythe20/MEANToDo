@@ -8,6 +8,11 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
+
+
+
+var connectionURL = "mongodb://" + "53a0fbccf023122a17fe7a2f8bda47c5" + ":" + encodeURIComponent("kernel18") + "@" +
+    "5a.mongo.evennode.com:27017";
 // configuration ===============================================================
 mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
 
